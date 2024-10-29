@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **inventory_delete**
-> inventory_delete(dt=dt, symbol=symbol, num_share=num_share, id=id, prefer=prefer)
+> inventory_delete(dt=dt, symbol=symbol, share_qty=share_qty, id=id, prefer=prefer)
 
 
 
@@ -36,12 +36,12 @@ with fugledata.ApiClient(configuration) as api_client:
     api_instance = fugledata.InventoryApi(api_client)
     dt = 'dt_example' # str |  (optional)
     symbol = 'symbol_example' # str |  (optional)
-    num_share = 'num_share_example' # str |  (optional)
+    share_qty = 'share_qty_example' # str |  (optional)
     id = 'id_example' # str |  (optional)
     prefer = 'prefer_example' # str | Preference (optional)
 
     try:
-        api_instance.inventory_delete(dt=dt, symbol=symbol, num_share=num_share, id=id, prefer=prefer)
+        api_instance.inventory_delete(dt=dt, symbol=symbol, share_qty=share_qty, id=id, prefer=prefer)
     except Exception as e:
         print("Exception when calling InventoryApi->inventory_delete: %s\n" % e)
 ```
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dt** | **str**|  | [optional] 
  **symbol** | **str**|  | [optional] 
- **num_share** | **str**|  | [optional] 
+ **share_qty** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
  **prefer** | **str**| Preference | [optional] 
 
@@ -81,7 +81,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **inventory_get**
-> List[Inventory] inventory_get(dt=dt, symbol=symbol, num_share=num_share, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
+> List[Inventory] inventory_get(dt=dt, symbol=symbol, share_qty=share_qty, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
 
 
 
@@ -107,7 +107,7 @@ with fugledata.ApiClient(configuration) as api_client:
     api_instance = fugledata.InventoryApi(api_client)
     dt = 'dt_example' # str |  (optional)
     symbol = 'symbol_example' # str |  (optional)
-    num_share = 'num_share_example' # str |  (optional)
+    share_qty = 'share_qty_example' # str |  (optional)
     id = 'id_example' # str |  (optional)
     select = 'select_example' # str | Filtering Columns (optional)
     order = 'order_example' # str | Ordering (optional)
@@ -118,7 +118,7 @@ with fugledata.ApiClient(configuration) as api_client:
     prefer = 'prefer_example' # str | Preference (optional)
 
     try:
-        api_response = api_instance.inventory_get(dt=dt, symbol=symbol, num_share=num_share, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
+        api_response = api_instance.inventory_get(dt=dt, symbol=symbol, share_qty=share_qty, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
         print("The response of InventoryApi->inventory_get:\n")
         pprint(api_response)
     except Exception as e:
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dt** | **str**|  | [optional] 
  **symbol** | **str**|  | [optional] 
- **num_share** | **str**|  | [optional] 
+ **share_qty** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
  **select** | **str**| Filtering Columns | [optional] 
  **order** | **str**| Ordering | [optional] 
@@ -167,7 +167,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **inventory_patch**
-> inventory_patch(dt=dt, symbol=symbol, num_share=num_share, id=id, prefer=prefer, inventory=inventory)
+> inventory_patch(dt=dt, symbol=symbol, share_qty=share_qty, id=id, prefer=prefer, inventory=inventory)
 
 
 
@@ -193,13 +193,13 @@ with fugledata.ApiClient(configuration) as api_client:
     api_instance = fugledata.InventoryApi(api_client)
     dt = 'dt_example' # str |  (optional)
     symbol = 'symbol_example' # str |  (optional)
-    num_share = 'num_share_example' # str |  (optional)
+    share_qty = 'share_qty_example' # str |  (optional)
     id = 'id_example' # str |  (optional)
     prefer = 'prefer_example' # str | Preference (optional)
     inventory = fugledata.Inventory() # Inventory | inventory (optional)
 
     try:
-        api_instance.inventory_patch(dt=dt, symbol=symbol, num_share=num_share, id=id, prefer=prefer, inventory=inventory)
+        api_instance.inventory_patch(dt=dt, symbol=symbol, share_qty=share_qty, id=id, prefer=prefer, inventory=inventory)
     except Exception as e:
         print("Exception when calling InventoryApi->inventory_patch: %s\n" % e)
 ```
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dt** | **str**|  | [optional] 
  **symbol** | **str**|  | [optional] 
- **num_share** | **str**|  | [optional] 
+ **share_qty** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
  **prefer** | **str**| Preference | [optional] 
  **inventory** | [**Inventory**](Inventory.md)| inventory | [optional] 

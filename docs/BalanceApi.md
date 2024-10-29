@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **balance_delete**
-> balance_delete(dt=dt, available=available, presave_amount=presave_amount, id=id, prefer=prefer)
+> balance_delete(dt=dt, available=available, id=id, prefer=prefer)
 
 
 
@@ -36,12 +36,11 @@ with fugledata.ApiClient(configuration) as api_client:
     api_instance = fugledata.BalanceApi(api_client)
     dt = 'dt_example' # str |  (optional)
     available = 'available_example' # str |  (optional)
-    presave_amount = 'presave_amount_example' # str |  (optional)
     id = 'id_example' # str |  (optional)
     prefer = 'prefer_example' # str | Preference (optional)
 
     try:
-        api_instance.balance_delete(dt=dt, available=available, presave_amount=presave_amount, id=id, prefer=prefer)
+        api_instance.balance_delete(dt=dt, available=available, id=id, prefer=prefer)
     except Exception as e:
         print("Exception when calling BalanceApi->balance_delete: %s\n" % e)
 ```
@@ -55,7 +54,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dt** | **str**|  | [optional] 
  **available** | **str**|  | [optional] 
- **presave_amount** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
  **prefer** | **str**| Preference | [optional] 
 
@@ -81,7 +79,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **balance_get**
-> List[Balance] balance_get(dt=dt, available=available, presave_amount=presave_amount, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
+> List[Balance] balance_get(dt=dt, available=available, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
 
 
 
@@ -107,7 +105,6 @@ with fugledata.ApiClient(configuration) as api_client:
     api_instance = fugledata.BalanceApi(api_client)
     dt = 'dt_example' # str |  (optional)
     available = 'available_example' # str |  (optional)
-    presave_amount = 'presave_amount_example' # str |  (optional)
     id = 'id_example' # str |  (optional)
     select = 'select_example' # str | Filtering Columns (optional)
     order = 'order_example' # str | Ordering (optional)
@@ -118,7 +115,7 @@ with fugledata.ApiClient(configuration) as api_client:
     prefer = 'prefer_example' # str | Preference (optional)
 
     try:
-        api_response = api_instance.balance_get(dt=dt, available=available, presave_amount=presave_amount, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
+        api_response = api_instance.balance_get(dt=dt, available=available, id=id, select=select, order=order, range=range, range_unit=range_unit, offset=offset, limit=limit, prefer=prefer)
         print("The response of BalanceApi->balance_get:\n")
         pprint(api_response)
     except Exception as e:
@@ -134,7 +131,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dt** | **str**|  | [optional] 
  **available** | **str**|  | [optional] 
- **presave_amount** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
  **select** | **str**| Filtering Columns | [optional] 
  **order** | **str**| Ordering | [optional] 
@@ -167,7 +163,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **balance_patch**
-> balance_patch(dt=dt, available=available, presave_amount=presave_amount, id=id, prefer=prefer, balance=balance)
+> balance_patch(dt=dt, available=available, id=id, prefer=prefer, balance=balance)
 
 
 
@@ -193,13 +189,12 @@ with fugledata.ApiClient(configuration) as api_client:
     api_instance = fugledata.BalanceApi(api_client)
     dt = 'dt_example' # str |  (optional)
     available = 'available_example' # str |  (optional)
-    presave_amount = 'presave_amount_example' # str |  (optional)
     id = 'id_example' # str |  (optional)
     prefer = 'prefer_example' # str | Preference (optional)
     balance = fugledata.Balance() # Balance | balance (optional)
 
     try:
-        api_instance.balance_patch(dt=dt, available=available, presave_amount=presave_amount, id=id, prefer=prefer, balance=balance)
+        api_instance.balance_patch(dt=dt, available=available, id=id, prefer=prefer, balance=balance)
     except Exception as e:
         print("Exception when calling BalanceApi->balance_patch: %s\n" % e)
 ```
@@ -213,7 +208,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **dt** | **str**|  | [optional] 
  **available** | **str**|  | [optional] 
- **presave_amount** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
  **prefer** | **str**| Preference | [optional] 
  **balance** | [**Balance**](Balance.md)| balance | [optional] 

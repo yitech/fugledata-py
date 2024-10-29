@@ -44,7 +44,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         _request_timeout: Union[
@@ -67,8 +66,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -98,7 +95,6 @@ class BalanceApi:
         _param = self._balance_delete_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             prefer=prefer,
             _request_auth=_request_auth,
@@ -126,7 +122,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         _request_timeout: Union[
@@ -149,8 +144,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -180,7 +173,6 @@ class BalanceApi:
         _param = self._balance_delete_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             prefer=prefer,
             _request_auth=_request_auth,
@@ -208,7 +200,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         _request_timeout: Union[
@@ -231,8 +222,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -262,7 +251,6 @@ class BalanceApi:
         _param = self._balance_delete_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             prefer=prefer,
             _request_auth=_request_auth,
@@ -285,7 +273,6 @@ class BalanceApi:
         self,
         dt,
         available,
-        presave_amount,
         id,
         prefer,
         _request_auth,
@@ -317,10 +304,6 @@ class BalanceApi:
         if available is not None:
             
             _query_params.append(('available', available))
-            
-        if presave_amount is not None:
-            
-            _query_params.append(('presave_amount', presave_amount))
             
         if id is not None:
             
@@ -362,7 +345,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         select: Annotated[Optional[StrictStr], Field(description="Filtering Columns")] = None,
         order: Annotated[Optional[StrictStr], Field(description="Ordering")] = None,
@@ -391,8 +373,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param select: Filtering Columns
@@ -434,7 +414,6 @@ class BalanceApi:
         _param = self._balance_get_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             select=select,
             order=order,
@@ -469,7 +448,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         select: Annotated[Optional[StrictStr], Field(description="Filtering Columns")] = None,
         order: Annotated[Optional[StrictStr], Field(description="Ordering")] = None,
@@ -498,8 +476,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param select: Filtering Columns
@@ -541,7 +517,6 @@ class BalanceApi:
         _param = self._balance_get_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             select=select,
             order=order,
@@ -576,7 +551,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         select: Annotated[Optional[StrictStr], Field(description="Filtering Columns")] = None,
         order: Annotated[Optional[StrictStr], Field(description="Ordering")] = None,
@@ -605,8 +579,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param select: Filtering Columns
@@ -648,7 +620,6 @@ class BalanceApi:
         _param = self._balance_get_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             select=select,
             order=order,
@@ -678,7 +649,6 @@ class BalanceApi:
         self,
         dt,
         available,
-        presave_amount,
         id,
         select,
         order,
@@ -716,10 +686,6 @@ class BalanceApi:
         if available is not None:
             
             _query_params.append(('available', available))
-            
-        if presave_amount is not None:
-            
-            _query_params.append(('presave_amount', presave_amount))
             
         if id is not None:
             
@@ -791,7 +757,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         balance: Annotated[Optional[Balance], Field(description="balance")] = None,
@@ -815,8 +780,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -848,7 +811,6 @@ class BalanceApi:
         _param = self._balance_patch_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             prefer=prefer,
             balance=balance,
@@ -877,7 +839,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         balance: Annotated[Optional[Balance], Field(description="balance")] = None,
@@ -901,8 +862,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -934,7 +893,6 @@ class BalanceApi:
         _param = self._balance_patch_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             prefer=prefer,
             balance=balance,
@@ -963,7 +921,6 @@ class BalanceApi:
         self,
         dt: Optional[StrictStr] = None,
         available: Optional[StrictStr] = None,
-        presave_amount: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         balance: Annotated[Optional[Balance], Field(description="balance")] = None,
@@ -987,8 +944,6 @@ class BalanceApi:
         :type dt: str
         :param available:
         :type available: str
-        :param presave_amount:
-        :type presave_amount: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -1020,7 +975,6 @@ class BalanceApi:
         _param = self._balance_patch_serialize(
             dt=dt,
             available=available,
-            presave_amount=presave_amount,
             id=id,
             prefer=prefer,
             balance=balance,
@@ -1044,7 +998,6 @@ class BalanceApi:
         self,
         dt,
         available,
-        presave_amount,
         id,
         prefer,
         balance,
@@ -1077,10 +1030,6 @@ class BalanceApi:
         if available is not None:
             
             _query_params.append(('available', available))
-            
-        if presave_amount is not None:
-            
-            _query_params.append(('presave_amount', presave_amount))
             
         if id is not None:
             

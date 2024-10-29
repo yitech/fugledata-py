@@ -44,7 +44,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         _request_timeout: Union[
@@ -67,8 +67,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -98,7 +98,7 @@ class InventoryApi:
         _param = self._inventory_delete_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             prefer=prefer,
             _request_auth=_request_auth,
@@ -126,7 +126,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         _request_timeout: Union[
@@ -149,8 +149,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -180,7 +180,7 @@ class InventoryApi:
         _param = self._inventory_delete_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             prefer=prefer,
             _request_auth=_request_auth,
@@ -208,7 +208,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         _request_timeout: Union[
@@ -231,8 +231,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -262,7 +262,7 @@ class InventoryApi:
         _param = self._inventory_delete_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             prefer=prefer,
             _request_auth=_request_auth,
@@ -285,7 +285,7 @@ class InventoryApi:
         self,
         dt,
         symbol,
-        num_share,
+        share_qty,
         id,
         prefer,
         _request_auth,
@@ -318,9 +318,9 @@ class InventoryApi:
             
             _query_params.append(('symbol', symbol))
             
-        if num_share is not None:
+        if share_qty is not None:
             
-            _query_params.append(('num_share', num_share))
+            _query_params.append(('share_qty', share_qty))
             
         if id is not None:
             
@@ -362,7 +362,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         select: Annotated[Optional[StrictStr], Field(description="Filtering Columns")] = None,
         order: Annotated[Optional[StrictStr], Field(description="Ordering")] = None,
@@ -391,8 +391,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param select: Filtering Columns
@@ -434,7 +434,7 @@ class InventoryApi:
         _param = self._inventory_get_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             select=select,
             order=order,
@@ -469,7 +469,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         select: Annotated[Optional[StrictStr], Field(description="Filtering Columns")] = None,
         order: Annotated[Optional[StrictStr], Field(description="Ordering")] = None,
@@ -498,8 +498,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param select: Filtering Columns
@@ -541,7 +541,7 @@ class InventoryApi:
         _param = self._inventory_get_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             select=select,
             order=order,
@@ -576,7 +576,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         select: Annotated[Optional[StrictStr], Field(description="Filtering Columns")] = None,
         order: Annotated[Optional[StrictStr], Field(description="Ordering")] = None,
@@ -605,8 +605,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param select: Filtering Columns
@@ -648,7 +648,7 @@ class InventoryApi:
         _param = self._inventory_get_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             select=select,
             order=order,
@@ -678,7 +678,7 @@ class InventoryApi:
         self,
         dt,
         symbol,
-        num_share,
+        share_qty,
         id,
         select,
         order,
@@ -717,9 +717,9 @@ class InventoryApi:
             
             _query_params.append(('symbol', symbol))
             
-        if num_share is not None:
+        if share_qty is not None:
             
-            _query_params.append(('num_share', num_share))
+            _query_params.append(('share_qty', share_qty))
             
         if id is not None:
             
@@ -791,7 +791,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         inventory: Annotated[Optional[Inventory], Field(description="inventory")] = None,
@@ -815,8 +815,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -848,7 +848,7 @@ class InventoryApi:
         _param = self._inventory_patch_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             prefer=prefer,
             inventory=inventory,
@@ -877,7 +877,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         inventory: Annotated[Optional[Inventory], Field(description="inventory")] = None,
@@ -901,8 +901,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -934,7 +934,7 @@ class InventoryApi:
         _param = self._inventory_patch_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             prefer=prefer,
             inventory=inventory,
@@ -963,7 +963,7 @@ class InventoryApi:
         self,
         dt: Optional[StrictStr] = None,
         symbol: Optional[StrictStr] = None,
-        num_share: Optional[StrictStr] = None,
+        share_qty: Optional[StrictStr] = None,
         id: Optional[StrictStr] = None,
         prefer: Annotated[Optional[StrictStr], Field(description="Preference")] = None,
         inventory: Annotated[Optional[Inventory], Field(description="inventory")] = None,
@@ -987,8 +987,8 @@ class InventoryApi:
         :type dt: str
         :param symbol:
         :type symbol: str
-        :param num_share:
-        :type num_share: str
+        :param share_qty:
+        :type share_qty: str
         :param id:
         :type id: str
         :param prefer: Preference
@@ -1020,7 +1020,7 @@ class InventoryApi:
         _param = self._inventory_patch_serialize(
             dt=dt,
             symbol=symbol,
-            num_share=num_share,
+            share_qty=share_qty,
             id=id,
             prefer=prefer,
             inventory=inventory,
@@ -1044,7 +1044,7 @@ class InventoryApi:
         self,
         dt,
         symbol,
-        num_share,
+        share_qty,
         id,
         prefer,
         inventory,
@@ -1078,9 +1078,9 @@ class InventoryApi:
             
             _query_params.append(('symbol', symbol))
             
-        if num_share is not None:
+        if share_qty is not None:
             
-            _query_params.append(('num_share', num_share))
+            _query_params.append(('share_qty', share_qty))
             
         if id is not None:
             

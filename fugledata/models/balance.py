@@ -29,9 +29,8 @@ class Balance(BaseModel):
     """ # noqa: E501
     dt: date
     available: Optional[StrictInt] = None
-    presave_amount: Optional[StrictInt] = None
     id: StrictInt = Field(description="Note: This is a Primary Key.<pk/>")
-    __properties: ClassVar[List[str]] = ["dt", "available", "presave_amount", "id"]
+    __properties: ClassVar[List[str]] = ["dt", "available", "id"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -86,7 +85,6 @@ class Balance(BaseModel):
         _obj = cls.model_validate({
             "dt": obj.get("dt"),
             "available": obj.get("available"),
-            "presave_amount": obj.get("presave_amount"),
             "id": obj.get("id")
         })
         return _obj

@@ -14,8 +14,6 @@ docs/Kline.md
 docs/KlineApi.md
 docs/MarketMetadata.md
 docs/MarketMetadataApi.md
-docs/Settlement.md
-docs/SettlementApi.md
 fugledata/__init__.py
 fugledata/api/__init__.py
 fugledata/api/alembic_version_api.py
@@ -24,7 +22,6 @@ fugledata/api/introspection_api.py
 fugledata/api/inventory_api.py
 fugledata/api/kline_api.py
 fugledata/api/market_metadata_api.py
-fugledata/api/settlement_api.py
 fugledata/api_client.py
 fugledata/api_response.py
 fugledata/configuration.py
@@ -35,7 +32,6 @@ fugledata/models/balance.py
 fugledata/models/inventory.py
 fugledata/models/kline.py
 fugledata/models/market_metadata.py
-fugledata/models/settlement.py
 fugledata/py.typed
 fugledata/rest.py
 git_push.sh
@@ -56,6 +52,4 @@ test/test_kline.py
 test/test_kline_api.py
 test/test_market_metadata.py
 test/test_market_metadata_api.py
-test/test_settlement.py
-test/test_settlement_api.py
 tox.ini

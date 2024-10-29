@@ -19,4 +19,3 @@ from fugledata.models.balance import Balance
 from fugledata.models.inventory import Inventory
 from fugledata.models.kline import Kline
 from fugledata.models.market_metadata import MarketMetadata
-from fugledata.models.settlement import Settlement

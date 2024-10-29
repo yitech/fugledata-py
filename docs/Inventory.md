@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dt** | **date** |  | 
 **symbol** | **str** |  | 
-**num_share** | **int** |  | 
+**share_qty** | **int** |  | 
 **id** | **int** | Note: This is a Primary Key.&lt;pk/&gt; | 
 
 ## Example

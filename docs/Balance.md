@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dt** | **date** |  | 
 **available** | **int** |  | [optional] 
-**presave_amount** | **int** |  | [optional] 
 **id** | **int** | Note: This is a Primary Key.&lt;pk/&gt; | 
 
 ## Example

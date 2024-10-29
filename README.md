@@ -103,10 +103,6 @@ Class | Method | HTTP request | Description
 *MarketMetadataApi* | [**market_metadata_get**](docs/MarketMetadataApi.md#market_metadata_get) | **GET** /market_metadata | 
 *MarketMetadataApi* | [**market_metadata_patch**](docs/MarketMetadataApi.md#market_metadata_patch) | **PATCH** /market_metadata | 
 *MarketMetadataApi* | [**market_metadata_post**](docs/MarketMetadataApi.md#market_metadata_post) | **POST** /market_metadata | 
-*SettlementApi* | [**settlement_delete**](docs/SettlementApi.md#settlement_delete) | **DELETE** /settlement | 
-*SettlementApi* | [**settlement_get**](docs/SettlementApi.md#settlement_get) | **GET** /settlement | 
-*SettlementApi* | [**settlement_patch**](docs/SettlementApi.md#settlement_patch) | **PATCH** /settlement | 
-*SettlementApi* | [**settlement_post**](docs/SettlementApi.md#settlement_post) | **POST** /settlement | 
 
 
 ## Documentation For Models
@@ -116,7 +112,6 @@ Class | Method | HTTP request | Description
  - [Inventory](docs/Inventory.md)
  - [Kline](docs/Kline.md)
  - [MarketMetadata](docs/MarketMetadata.md)
- - [Settlement](docs/Settlement.md)
 
 
 <a id="documentation-for-authorization"></a>

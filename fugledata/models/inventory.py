@@ -29,9 +29,9 @@ class Inventory(BaseModel):
     """ # noqa: E501
     dt: date
     symbol: StrictStr
-    num_share: StrictInt
+    share_qty: StrictInt
     id: StrictInt = Field(description="Note: This is a Primary Key.<pk/>")
-    __properties: ClassVar[List[str]] = ["dt", "symbol", "num_share", "id"]
+    __properties: ClassVar[List[str]] = ["dt", "symbol", "share_qty", "id"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -86,7 +86,7 @@ class Inventory(BaseModel):
         _obj = cls.model_validate({
             "dt": obj.get("dt"),
             "symbol": obj.get("symbol"),
-            "num_share": obj.get("num_share"),
+            "share_qty": obj.get("share_qty"),
             "id": obj.get("id")
         })
         return _obj

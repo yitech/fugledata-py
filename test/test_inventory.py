@@ -37,14 +37,14 @@ class TestInventory(unittest.TestCase):
             return Inventory(
                 dt = datetime.datetime.strptime('1975-12-30', '%Y-%m-%d').date(),
                 symbol = '',
-                num_share = 56,
+                share_qty = 56,
                 id = 56
             )
         else:
             return Inventory(
                 dt = datetime.datetime.strptime('1975-12-30', '%Y-%m-%d').date(),
                 symbol = '',
-                num_share = 56,
+                share_qty = 56,
                 id = 56,
         )
         """

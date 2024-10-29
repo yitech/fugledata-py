@@ -37,7 +37,6 @@ class TestBalance(unittest.TestCase):
             return Balance(
                 dt = datetime.datetime.strptime('1975-12-30', '%Y-%m-%d').date(),
                 available = 56,
-                presave_amount = 56,
                 id = 56
             )
         else:

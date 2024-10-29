@@ -7,5 +7,4 @@ from fugledata.api.balance_api import BalanceApi
 from fugledata.api.inventory_api import InventoryApi
 from fugledata.api.kline_api import KlineApi
 from fugledata.api.market_metadata_api import MarketMetadataApi
-from fugledata.api.settlement_api import SettlementApi
 
